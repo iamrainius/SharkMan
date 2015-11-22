@@ -3,6 +3,7 @@
 
 #include "cocos2d.h"
 #include "SharkMan.h"
+#include "PlayerInput.h"
 
 class MainScene : public cocos2d::Layer
 {
@@ -19,6 +20,15 @@ public:
     
 private:
     SharkMan* sharkMan;
+    PlayerInput* input;
+    
+    static void initBackground(cocos2d::Scene* scene);
+    void initPerspectiveCamera();
+    void initSharkMan();
+    
+    bool onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *unused_event);
+    void onTouchEnded(cocos2d::Touch *touch, cocos2d::Event *unused_event);
+    void upDateScene(float dt);
 };
 
 #endif // __MAIN_SCENE_H__

@@ -14,6 +14,8 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		3EACC98F19EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
 		3EACC99019EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
+		3F3837BE1C007D8F00A4947F /* PlayerInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F3837BC1C007D8F00A4947F /* PlayerInput.cpp */; };
+		3F3837C51C009B2500A4947F /* CCMoveBy3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F3837C31C009B2500A4947F /* CCMoveBy3D.cpp */; };
 		3F930BBE1BF8C2C2003F228B /* SharkMan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F930BBC1BF8C2C2003F228B /* SharkMan.cpp */; };
 		3F930BC01BF8C3CB003F228B /* model in Resources */ = {isa = PBXBuildFile; fileRef = 3F930BBF1BF8C3CB003F228B /* model */; };
 		46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7619C43A67006E1F66 /* CloseNormal.png */; };
@@ -112,6 +114,11 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3EACC98E19EE6D4300EB3C5E /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
+		3F3837BC1C007D8F00A4947F /* PlayerInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerInput.cpp; sourceTree = "<group>"; };
+		3F3837BD1C007D8F00A4947F /* PlayerInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerInput.h; sourceTree = "<group>"; };
+		3F3837BF1C0091CD00A4947F /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		3F3837C31C009B2500A4947F /* CCMoveBy3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCMoveBy3D.cpp; sourceTree = "<group>"; };
+		3F3837C41C009B2500A4947F /* CCMoveBy3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMoveBy3D.h; sourceTree = "<group>"; };
 		3F930BBC1BF8C2C2003F228B /* SharkMan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SharkMan.cpp; sourceTree = "<group>"; };
 		3F930BBD1BF8C2C2003F228B /* SharkMan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharkMan.h; sourceTree = "<group>"; };
 		3F930BBF1BF8C3CB003F228B /* model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = model; sourceTree = "<group>"; };
@@ -303,12 +310,17 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3F3837C31C009B2500A4947F /* CCMoveBy3D.cpp */,
+				3F3837C41C009B2500A4947F /* CCMoveBy3D.h */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 				46880B8619C43A87006E1F66 /* MainScene.cpp */,
 				46880B8719C43A87006E1F66 /* MainScene.h */,
 				3F930BBC1BF8C2C2003F228B /* SharkMan.cpp */,
 				3F930BBD1BF8C2C2003F228B /* SharkMan.h */,
+				3F3837BC1C007D8F00A4947F /* PlayerInput.cpp */,
+				3F3837BD1C007D8F00A4947F /* PlayerInput.h */,
+				3F3837BF1C0091CD00A4947F /* Constants.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -506,8 +518,10 @@
 				3F930BBE1BF8C2C2003F228B /* SharkMan.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* MainScene.cpp in Sources */,
+				3F3837BE1C007D8F00A4947F /* PlayerInput.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				3F3837C51C009B2500A4947F /* CCMoveBy3D.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
